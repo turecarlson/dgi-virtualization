@@ -25,11 +25,13 @@ apt-get install cockpit-machines -y
 # Install Podman
 apt-get install podman podman-compose podman-docker cockpit-podman -y
 
-# Download OPNSense iso
-# apt-get install curl -y
+# # Download OPNSense iso
 # mkdir /iso
-# cd /iso 
-# curl -O https://mirrors.ocf.berkeley.edu/opnsense//releases/24.1/OPNsense-24.1-dvd-amd64.iso.bz2 #OCF @ UCBerklee
-# curl -O https://mirror.wdc1.us.leaseweb.net/opnsense/releases/24.1/OPNsense-24.1-dvd-amd64.iso.bz2 # LeaseWeb East coast
-# bzip2 -d OPNSense-24.1-dvd-amd64.iso.bz2
+# $OPNSenseISO = https://mirrors.ocf.berkeley.edu/opnsense//releases/24.1/OPNsense-24.1-dvd-amd64.iso.bz2 #OCF @ UCBerklee 
+# $OPNSenseISO =  https://mirror.wdc1.us.leaseweb.net/opnsense/releases/24.1/OPNsense-24.1-dvd-amd64.iso.bz2 # LeaseWeb East coast
+# wget -P iso/ $OPNSenseISO
+# bzip2 -d /iso/OPNsense-24.1-dvd-amd64.iso.bz2
+
+# Download VM images from cloud
+# TODO
 
