@@ -5,11 +5,11 @@ apt upgrade
 apt-get install sudo -y
 adduser dgiadmin sudo
 
-# Install Cockpit
-apt-get install cockpit -y
-
 # Install virtualization tools 
 apt-get install virt-manager qemu-system-x86 qemu-utils libvirt-daemon-system ovmf -y
+
+# Install Cockpit
+apt-get install cockpit -y
 
 # Install Cockpit-Machines
 apt-get install gettext nodejs make git -y
