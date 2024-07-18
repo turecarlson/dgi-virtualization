@@ -7,7 +7,14 @@ apt-get install sudo -y
 usermod -aG sudo dgiadmin
 
 # Install virtualization tools 
-apt-get install virt-manager qemu-system-x86 qemu-utils libvirt-daemon-system ovmf libvirt-dbus -y
+apt-get install \
+virt-manager \
+qemu-system-x86 \
+qemu-utils \
+libvirt-daemon-system \
+ovmf \
+libvirt-dbus \
+-y
 
 # Install Cockpit
 apt-get install cockpit -y
@@ -24,7 +31,12 @@ apt-get install cockpit-machines -y
 # make install
 
 # Install Podman
-apt-get install podman podman-compose podman-docker cockpit-podman -y
+apt-get install \
+podman \
+podman-compose \
+podman-docker \
+cockpit-podman \
+-y
 
 # # Download OPNSense iso
 # mkdir /iso
