@@ -3,7 +3,7 @@ apt upgrade
 
 # Install Sudo & add dgiadmin user to group
 apt-get install sudo -y
-adduser dgiadmin sudo
+usermod -aG sudo dgiadmin
 
 # Install virtualization tools 
 apt-get install virt-manager qemu-system-x86 qemu-utils libvirt-daemon-system ovmf libvirt-dbus -y
