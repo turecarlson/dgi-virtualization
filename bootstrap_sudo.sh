@@ -19,6 +19,9 @@ cd cockpit-machines
 make
 make install
 
+# Install Podman
+apt-get install podman podman-compose podman-docker cockpit-podman -y
+
 # Download OPNSense iso
 # apt-get install curl -y
 # mkdir /iso
