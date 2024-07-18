@@ -12,7 +12,7 @@ apt-get install cockpit -y
 apt-get install virt-manager qemu-system-x86 qemu-utils libvirt-daemon-system ovmf -y
 
 # Install Cockpit-Machines
-apt-get install gettext nodejs make -y
+apt-get install gettext nodejs make git -y
 cd /tmp
 git clone https://github.com/cockpit-project/cockpit-machines
 cd cockpit-machines
