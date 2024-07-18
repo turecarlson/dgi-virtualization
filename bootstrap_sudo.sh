@@ -12,12 +12,15 @@ apt-get install virt-manager qemu-system-x86 qemu-utils libvirt-daemon-system ov
 apt-get install cockpit -y
 
 # Install Cockpit-Machines
-apt-get install gettext nodejs make git -y
-cd /tmp
-git clone https://github.com/cockpit-project/cockpit-machines
-cd cockpit-machines
-make
-make install
+apt-get install cockpit-machines -y
+
+# # Install Cockpit-Machines from Source
+# apt-get install gettext nodejs make git -y
+# cd /tmp
+# git clone https://github.com/cockpit-project/cockpit-machines
+# cd cockpit-machines
+# make
+# make install
 
 # Install Podman
 apt-get install podman podman-compose podman-docker cockpit-podman -y
