@@ -1,3 +1,4 @@
+# initial updates
 apt update
 apt upgrade
 
