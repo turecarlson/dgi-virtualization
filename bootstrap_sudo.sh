@@ -18,6 +18,11 @@ libvirt-dbus \
 
 # Install Cockpit
 apt-get install cockpit -y
+# Set cockpit port to 443 (default for https connections)
+mkdir /etc/systemd/system/cockpit.socket.d/
+echo -e "[Socket]\nListenStream=\nListenStream=443" > /etc/systemd/system/cockpit.socket.d/listen.conf
+systemctl daemon-reload
+systemctl restart cockpit.socket
 
 # Install Cockpit-Machines
 apt-get install cockpit-machines -y
